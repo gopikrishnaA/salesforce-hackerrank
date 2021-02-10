@@ -1,0 +1,90 @@
+/**
+ * Crated by A. Gopi krishna
+ */
+.app {
+  min-height      : 100vh;
+  background-color: #222;
+  color           : white;
+  padding         : 0 15px;
+}
+
+.app-header {
+  display        : flex;
+  align-items    : center;
+  justify-content: space-between;
+  color          : white;
+  border-bottom  : 2px solid white;
+}
+
+.app-container {
+  display       : flex;
+  flex-direction: column;
+  border        : 2px solid white;
+  min-height    : 90vh;
+}
+
+.app-left-container {
+  flex-basis   : 20%;
+  text-align   : center;
+  border-bottom: 2px solid white;
+}
+
+.app-right-container {
+  flex-basis: 80%;
+  padding   : 0 20px;
+}
+
+.app-title-left {
+  margin-top: 10px;
+}
+
+.app-title {
+  display        : flex;
+  align-items    : flex-end;
+  flex-direction : column;
+  padding        : 10px 0;
+  font-size      : 1.25rem;
+  font-weight    : 600;
+  justify-content: space-between;
+}
+
+.app-left-title {
+  flex-basis: 75%;
+}
+
+.app-right-title {
+  flex-basis: 25%;
+  text-align: right;
+}
+
+.app-buttons {
+  padding        : 20px 0;
+  margin         : 0 auto;
+  display        : flex;
+  flex-direction : row;
+  justify-content: flex-end;
+}
+
+.app-button {
+  margin-right: 20px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .app {
+    padding: 0 50px;
+  }
+
+  .app-container {
+    flex-direction: row;
+  }
+
+  .app-left-container {
+    border-right: 2px solid white;
+  }
+
+  .app-title {
+    flex-direction: row;
+    align-items   : baseline;
+  }
+}
